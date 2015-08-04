@@ -3,8 +3,11 @@ package org.formation.fonctionnelle;
 import java.util.Scanner;
 import static java.lang.Math.PI;
 
+/*
+ * demandez à l'utilisateur le rayon et la longueur d'un cylindre, en
+ * afficher l'aire du disque et le volume du cylindre
+ */
 public class Fonct1 {
-
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Entrez un rayon : ");

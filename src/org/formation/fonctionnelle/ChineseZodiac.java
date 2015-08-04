@@ -2,15 +2,18 @@ package org.formation.fonctionnelle;
 
 import java.util.Scanner;
 
+/*
+ * Un signe astrologique chinois dépend de l'année de naissance. Faire une
+ * application qui pour une année de naissance en entrée, fait correspondre
+ * le signe astrologique chinois approprié.
+ */
 public class ChineseZodiac {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int year = scanner.nextInt();
 		int sign = year % 12;
 
-		switch (sign)
-		{
+		switch (sign) {
 		case 0:
 			System.out.println("You are a monkey");
 			break;
@@ -50,7 +53,7 @@ public class ChineseZodiac {
 		default: // negative number
 			System.out.println("?????????????");
 		}
-		
+
 		scanner.close();
 	}
 
