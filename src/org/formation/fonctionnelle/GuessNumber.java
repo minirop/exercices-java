@@ -16,20 +16,21 @@ public class GuessNumber {
 	public static void main(String[] args) {
 		int secretNumber = (new Random()).nextInt(1000);
 
-		Scanner scanner = new Scanner(System.in);
-		int value, numberOfTries = 0;
-		do {
-			System.out.print("Entrez un nombre entre 0 et 1000 : ");
-			value = scanner.nextInt();
-			numberOfTries++;
+		try (Scanner scanner = new Scanner(System.in)) {
+			int value, numberOfTries = 0;
+			do {
+				System.out.print("Entrez un nombre entre 0 et 1000 : ");
+				value = scanner.nextInt();
+				numberOfTries++;
 
-			if (value < secretNumber)
-				System.out.println("c'est plus");
-			else if (value > secretNumber)
-				System.out.println("c'est moins");
-		} while (value != secretNumber);
-		System.out.println("c'est gagné ! " + numberOfTries + " essai" + (numberOfTries > 1 ? "s" : ""));
-		scanner.close();
+				if (value < secretNumber) {
+					System.out.println("c'est plus");
+				} else if (value > secretNumber) {
+					System.out.println("c'est moins");
+				}
+			} while (value != secretNumber);
+			System.out.println("c'est gagné ! " + numberOfTries + " essai" + (numberOfTries > 1 ? "s" : ""));
+		}
 	}
 
 }

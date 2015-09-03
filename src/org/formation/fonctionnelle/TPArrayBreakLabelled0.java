@@ -13,12 +13,12 @@ import java.util.Scanner;
 public class TPArrayBreakLabelled0 {
 
 	public static void main(String[] args) {
-		int[] tab = { 32, 87, 3, 589, 12, 1076, 2000, 8, 622, 127 };
-		Scanner scanner = new Scanner(System.in);
-
-		System.out.print("Entrez une valeur : ");
-		int val = scanner.nextInt();
-		scanner.close();
+		int[] tab = {32, 87, 3, 589, 12, 1076, 2000, 8, 622, 127};
+		int val;
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.print("Entrez une valeur : ");
+			val = scanner.nextInt();
+		}
 
 		boolean found = false;
 		for (int x : tab) {

@@ -12,9 +12,9 @@ import java.util.Map.Entry;
 public class FonctProblemeAdresses {
 
 	public static void main(String[] args) {
-		String[] adresses = { "test1@hotmail.com", "foo@bar.com", "lalala@wanadoo.fr", "dupont@gmail.com",
-				"test2@hotmail.com", "dupond@gmail.com", "useless@yahoo.com", "bob@sfr.fr", "bill.gates@hotmail.com",
-				"lala@orange.fr" };
+		String[] adresses = {"test1@hotmail.com", "foo@bar.com", "lalala@wanadoo.fr", "dupont@gmail.com",
+			"test2@hotmail.com", "dupond@gmail.com", "useless@yahoo.com", "bob@sfr.fr", "bill.gates@hotmail.com",
+			"lala@orange.fr"};
 
 		HashMap<String, Integer> pourcentages = new HashMap<>();
 		for (String addr : adresses) {

@@ -19,6 +19,7 @@ package org.formation.fonctionnelle;
  * afficher « ... »
  */
 public class FonctFor {
+
 	public static void main(String[] args) {
 		for (int i = 0; i < 13; i++) {
 			System.out.println(i);
@@ -26,7 +27,7 @@ public class FonctFor {
 
 		System.out.println("------");
 
-		final int[] chiffres = { 1, 42, 57, 74, 11, 16, 87 };
+		final int[] chiffres = {1, 42, 57, 74, 11, 16, 87};
 		for (int i = 0; i < chiffres.length; i++) {
 			System.out.println(chiffres[i]);
 		}
@@ -40,7 +41,7 @@ public class FonctFor {
 		System.out.println("------");
 
 		final String ville = "Nantes";
-		final String[] villes = { "Paris", "Nantes", "Lille", "Bordeaux" };
+		final String[] villes = {"Paris", "Nantes", "Lille", "Bordeaux"};
 		for (final String v : villes) {
 			System.out.print(v + " : ");
 			if (v.equals(ville)) {

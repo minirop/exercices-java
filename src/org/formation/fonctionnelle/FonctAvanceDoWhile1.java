@@ -10,6 +10,7 @@ import java.util.Random;
  * cette combinaison.
  */
 public class FonctAvanceDoWhile1 {
+
 	public static void main(String[] args) {
 		int numberOfTries = 0;
 		int a, b, c;
@@ -26,7 +27,6 @@ public class FonctAvanceDoWhile1 {
 		// version "à ne jamais faire"
 		// do {
 		// } while(++numberOfTries > 0 & ((r.nextInt(1000) % 2) == 1 || (r.nextInt(1000) % 2) == 1 || (r.nextInt(1000) % 2) == 0));
-
 		System.out.format("La suite 'pair, pair, impair' (%d, %d, %d) a été obtenue après %d essai%s", a, b, c, numberOfTries, (numberOfTries > 1 ? "s" : ""));
 	}
 

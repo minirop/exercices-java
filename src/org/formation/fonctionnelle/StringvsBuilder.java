@@ -2,15 +2,15 @@ package org.formation.fonctionnelle;
 
 /* 
  * Créer deux String de la manière suivante :
-* String lievre;
-* String tortue = "";
-* Faire une boucle qui itère 10000 fois
-* dans la boucle ajouter '' '' et i (l'indice de l'itération).
-* Faire une boucle en concaténant des string avec +
-* Une boucle en utilisant StringBuilder et sa méthode append() ;
-* Comparer les chaines (elle doivent être égales)
-* Calculer le temps mis pour la concaténation et pour la méthode append de StringBuilder
-*/
+ * String lievre;
+ * String tortue = "";
+ * Faire une boucle qui itère 10000 fois
+ * dans la boucle ajouter '' '' et i (l'indice de l'itération).
+ * Faire une boucle en concaténant des string avec +
+ * Une boucle en utilisant StringBuilder et sa méthode append() ;
+ * Comparer les chaines (elle doivent être égales)
+ * Calculer le temps mis pour la concaténation et pour la méthode append de StringBuilder
+ */
 public class StringvsBuilder {
 
 	public static void main(String[] args) {

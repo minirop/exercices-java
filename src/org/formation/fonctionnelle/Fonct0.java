@@ -12,6 +12,7 @@ import java.util.Scanner;
  * de ce nombre
  */
 public class Fonct0 {
+
 	public static void main(String[] args) {
 		int xi = 10, yi = 3;
 		System.out.println("entiers:");
